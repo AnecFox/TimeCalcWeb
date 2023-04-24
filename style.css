@@ -1,0 +1,42 @@
+#title {
+    font-family: Helvetica;
+    font-size: 235%;
+    color: #349AD4;
+}
+
+#result {
+    font-family: Helvetica;
+    font-size: 148%;
+}
+
+input {
+    font-size: x-large;
+}
+
+div {
+    text-align: center;
+    vertical-align: middle;
+}
+
+label {
+    font-family: Helvetica;
+    font-size: 128%;
+    margin: 12px;
+}
+
+.inputs {
+    font-size: large;
+}
+
+@media only screen and (orientation: portrait) {
+    body {
+        zoom: 200%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    html, body {
+        height: 100%;
+    }
+}
