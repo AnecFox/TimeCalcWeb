@@ -1,30 +1,30 @@
 #title {
-    font-family: Helvetica;
+    font-family: Helvetica, sans-serif;
     font-size: 235%;
     color: #349AD4;
 }
 
 #result {
-    font-family: Helvetica;
+    font-family: Helvetica, sans-serif;
     font-size: 148%;
 }
 
 input {
+    font-family: Helvetica, sans-serif;
     font-size: x-large;
 }
 
-div {
-    text-align: center;
-    vertical-align: middle;
-}
-
 label {
-    font-family: Helvetica;
+    font-family: Helvetica, sans-serif;
     font-size: 128%;
     margin: 12px;
 }
 
-.inputs {
+div {
+    text-align: center;
+}
+
+.input-time-container {
     font-size: large;
 }
 
@@ -36,7 +36,8 @@ label {
         justify-content: center;
     }
 
-    html, body {
+    html,
+    body {
         height: 100%;
     }
 }
