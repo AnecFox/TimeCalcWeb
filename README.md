@@ -1,2 +1,2 @@
 # TimeCalculator Web
-![TimeCalcWeb GIF](image.gif)
+![TimeCalcWeb GIF](images/image.gif)

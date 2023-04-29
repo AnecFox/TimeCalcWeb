@@ -1,0 +1,66 @@
+#title {
+    font-family: Helvetica, sans-serif;
+    font-size: 235%;
+}
+
+#result {
+    font-family: Helvetica, sans-serif;
+    font-size: 148%;
+}
+
+#theme-button {
+    font-size: large;
+    border-style: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 48px;
+    height: 48px;
+}
+
+input {
+    font-family: Helvetica, sans-serif;
+    font-size: x-large;
+    padding: 5px;
+    border-style: none;
+    border-radius: 5px;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+label {
+    font-family: Helvetica, sans-serif;
+    font-size: 128%;
+    margin: 12px;
+}
+
+.container {
+    text-align: center;
+}
+
+.theme-container {
+    text-align: right;
+}
+
+.input-time-container {
+    font-size: large;
+}
+
+@media only screen and (orientation: portrait) {
+    body {
+        zoom: 200%;
+    }
+
+    html,
+    body,
+    .container {
+        height: 95%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

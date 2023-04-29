@@ -1,0 +1,23 @@
+body {
+    background-color: #242424;
+    color: #F4F4F4;
+    transition: background-color 0.5s ease;
+}
+
+#title {
+    color: #69B5E0;
+    transition: color 0.5s ease;
+}
+
+#theme-button {
+    background-image: url('/images/dark-theme-icon.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 32px 32px;
+}
+
+#theme-button, input {
+    background-color: #373737;
+    color: #F4F4F4;
+    transition: color 0.5s ease;
+}

@@ -1,0 +1,25 @@
+body {
+    background-color: #FFFFFF;
+    color: #111111;
+    transition: background-color 0.5s ease;
+}
+
+#title {
+    color: #349AD4;
+    transition: color 0.5s ease;
+}
+
+#theme-button {
+    background-color: #E8E8E8;
+    color: #111111;
+    background-image: url('/images/light-theme-icon.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 32px 32px;
+    transition: color 0.5s ease;
+}
+
+input {
+    background-color: #E8E8E8;
+    transition: color 0.5s ease;
+}

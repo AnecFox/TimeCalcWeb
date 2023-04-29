@@ -5,23 +5,28 @@
 <head>
     <title>TimeCalculator</title>
     <meta charset="utf-8">
-    <link rel="icon" href="favicon.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-light.css" id="theme-link">
 </head>
 
 <body>
-    <div>
+    <div class="theme-container">
+        <button id="theme-button"></button>
+    </div>
+
+    <div class="container">
         <h1 id="title">TimeCalculator</h1>
 
         <div class="input-time-container">
-            <label class="labels">От</label>
+            <label>От</label>
             <label>
                 <input type="time" value="12:52" id="first-time">
             </label>
         </div>
         <br>
         <div class="input-time-container">
-            <label class="labels">До</label>
+            <label>До</label>
             <label>
                 <input type="time" value="14:26" id="second-time">
             </label>
@@ -29,8 +34,10 @@
         <br>
 
         <h2 id="result">Результат: 1 час, 34 минуты</h2>
-        <script src="time-calculator.js"></script>
     </div>
+
+    <script src="theme-switcher.js"></script>
+    <script src="time-calculator.js"></script>
 </body>
 
 </html>
