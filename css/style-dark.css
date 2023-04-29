@@ -10,7 +10,7 @@ body {
 }
 
 #theme-button {
-    background-image: url('/TimeCalcWeb/images/dark-theme-icon.png');
+    background-image: url('../images/dark-theme-icon.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 32px 32px;
