@@ -6,7 +6,7 @@ let darkTheme = "css/style-dark.css";
 
 let currentTheme = link.getAttribute("href");
 
-if (localStorage.getItem('theme') === lightTheme) {
+if (localStorage.getItem("theme") === lightTheme) {
     currentTheme = lightTheme;
 } else {
     currentTheme = darkTheme;
@@ -14,16 +14,12 @@ if (localStorage.getItem('theme') === lightTheme) {
 link.setAttribute("href", currentTheme);
 
 themeButton.addEventListener("click", function () {
-    let theme;
-
     if (currentTheme === lightTheme) {
         currentTheme = darkTheme;
-        theme = "dark";
     } else {
         currentTheme = lightTheme;
-        theme = "light";
     }
 
     link.setAttribute("href", currentTheme);
-    localStorage.setItem('theme', currentTheme);
+    localStorage.setItem("theme", currentTheme);
 });
