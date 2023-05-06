@@ -1,6 +1,6 @@
-let firstTime = document.getElementById("first-time");
-let secondTime = document.getElementById("second-time");
-let result = document.getElementById("result");
+const firstTime = document.getElementById("first-time");
+const secondTime = document.getElementById("second-time");
+const result = document.getElementById("result");
 
 function calculateTime() {
     if (firstTime.value === "" || secondTime.value === "") {

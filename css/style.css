@@ -35,12 +35,12 @@ label {
     margin: 12px;
 }
 
-.container {
-    text-align: center;
+header {
+    text-align: right;
 }
 
-.theme-container {
-    text-align: right;
+.container {
+    text-align: center;
 }
 
 .input-time-container {
