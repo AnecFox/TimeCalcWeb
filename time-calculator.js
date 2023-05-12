@@ -16,12 +16,11 @@ function calculateTime() {
         let hourWords;
         let minuteWords;
         
-        if (window.location.pathname === "/index-en.html") {
+        if (window.location.pathname.includes("en")) {
             hourWords = ["hour", "hours", "hours"];
             minuteWords = ["minute", "minutes", "minutes"];
             result.innerHTML = "Result: ";
         } else {
-            console.log(window.location.pathname);
             hourWords = ["час", "часа", "часов"];
             minuteWords = ["минута", "минуты", "минут"];
             result.innerHTML = "Результат: ";
