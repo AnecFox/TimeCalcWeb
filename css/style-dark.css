@@ -1,11 +1,11 @@
 body {
     background-color: #242424;
-    color: #F4F4F4;
+    color: #f4f4f4;
     transition: background-color 0.5s ease;
 }
 
 #title {
-    color: #69B5E0;
+    color: #69b5e0;
     transition: color 0.5s ease;
 }
 
@@ -18,6 +18,10 @@ body {
 
 #theme-button, input {
     background-color: #373737;
-    color: #F4F4F4;
+    color: #f4f4f4;
     transition: color 0.5s ease;
+}
+
+a {
+    color: #e4e4e4;
 }

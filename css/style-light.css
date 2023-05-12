@@ -1,16 +1,16 @@
 body {
-    background-color: #FFFFFF;
+    background-color: #ffffff;
     color: #111111;
     transition: background-color 0.5s ease;
 }
 
 #title {
-    color: #349AD4;
+    color: #349ad4;
     transition: color 0.5s ease;
 }
 
 #theme-button {
-    background-color: #E8E8E8;
+    background-color: #e8e8e8;
     color: #111111;
     background-image: url('../images/light-theme-icon.png');
     background-repeat: no-repeat;
@@ -20,6 +20,10 @@ body {
 }
 
 input {
-    background-color: #E8E8E8;
+    background-color: #e8e8e8;
     transition: color 0.5s ease;
+}
+
+a {
+    color: #282828;
 }
