@@ -13,13 +13,22 @@ function calculateTime() {
         let hours = difference.getUTCHours();
         let minutes = difference.getUTCMinutes();
 
-        let hourWords = ["час", "часа", "часов"];
-        let minuteWords = ["минута", "минуты", "минут"];
+        let hourWords;
+        let minuteWords;
+        
+        if (window.location.pathname === "/index-en.html") {
+            hourWords = ["hour", "hours", "hours"];
+            minuteWords = ["minute", "minutes", "minutes"];
+            result.innerHTML = "Result: ";
+        } else {
+            console.log(window.location.pathname);
+            hourWords = ["час", "часа", "часов"];
+            minuteWords = ["минута", "минуты", "минут"];
+            result.innerHTML = "Результат: ";
+        }
 
         let hourWord = selectWordForNumber(hours, hourWords);
         let minuteWord = selectWordForNumber(minutes, minuteWords);
-
-        result.innerHTML = "Результат: ";
 
         if (hours !== 0 && minutes !== 0) {
             result.innerHTML += hours + " " + hourWord + ", " + minutes + " " + minuteWord;
