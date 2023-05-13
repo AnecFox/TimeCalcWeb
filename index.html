@@ -1,47 +1,47 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="ru">
 
 <head>
     <title>TimeCalculator</title>
     <meta charset="utf-8">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link rel="icon" href="images/favicon.png">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/style-light.css" id="theme-link">
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <link href="images/favicon.png" rel="icon">
+    <link href="images/apple-touch-icon.png" rel="apple-touch-ixxcon">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-light.css" id="theme-link" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <button id="theme-button"></button>
-    </header>
+<header>
+    <button id="theme-button"></button>
+</header>
 
-    <div class="container">
-        <h1 id="title">TimeCalculator</h1>
+<div class="container">
+    <h1 id="title">TimeCalculator</h1>
 
-        <div class="input-time-container">
-            <label>От</label>
-            <label>
-                <input type="time" value="12:52" id="first-time">
-            </label>
-        </div>
-        <br>
-        <div class="input-time-container">
-            <label>До</label>
-            <label>
-                <input type="time" value="14:26" id="second-time">
-            </label>
-        </div>
-        <br>
-
-        <h2 id="result">Результат: 1 час, 34 минуты</h2>
-        <footer><a href="https://github.com/AnecFox/TimeCalcWeb" target="_blank">GitHub🐾</a></footer>
+    <div class="input-time-container">
+        <label>От</label>
+        <label>
+            <input id="first-time" type="time" value="12:52">
+        </label>
     </div>
+    <br>
+    <div class="input-time-container">
+        <label>До</label>
+        <label>
+            <input id="second-time" type="time" value="14:26">
+        </label>
+    </div>
+    <br>
 
-    <script src="lang.js"></script>
-    <script src="theme-switcher.js"></script>
-    <script src="time-calculator.js"></script>
+    <h2 id="result">Результат: 1 час, 34 минуты</h2>
+    <footer><a href="https://github.com/AnecFox/TimeCalcWeb" target="_blank">GitHub🐾</a></footer>
+</div>
+
+<script src="lang.js"></script>
+<script src="theme-switcher.js"></script>
+<script src="time-calculator.js"></script>
 </body>
 
 </html>

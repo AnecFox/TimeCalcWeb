@@ -15,7 +15,7 @@ function calculateTime() {
 
         let hourWords;
         let minuteWords;
-        
+
         if (window.location.pathname.includes("en")) {
             hourWords = ["hour", "hours", "hours"];
             minuteWords = ["minute", "minutes", "minutes"];
