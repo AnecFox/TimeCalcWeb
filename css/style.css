@@ -1,17 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-
-body {
-    font-family: 'Lato', sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
 #title {
     font-family: Helvetica, sans-serif;
     font-size: 235%;
 }
 
 #result {
+    font-family: Helvetica, sans-serif;
     font-size: 148%;
 }
 
@@ -30,7 +23,6 @@ input {
     padding: 5px;
     border-style: none;
     border-radius: 5px;
-    -webkit-font-smoothing: subpixel-antialiased;
 }
 
 input[type="time"]::-webkit-calendar-picker-indicator {
@@ -38,7 +30,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 label {
-    font-family: 'Lato', sans-serif;
+    font-family: Helvetica, sans-serif;
     font-size: 128%;
     margin: 12px;
 }
