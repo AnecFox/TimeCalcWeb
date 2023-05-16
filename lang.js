@@ -1,5 +1,5 @@
-let userLang = navigator.language || navigator.userLanguage;
+let userLang = navigator.language;
 
-if (userLang.indexOf('ru') !== 0) {
-    window.location.href = 'index-en.html';
+if (!userLang.includes("ru")) {
+    window.location.href = "index-en.html";
 }
