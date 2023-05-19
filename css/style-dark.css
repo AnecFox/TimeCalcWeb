@@ -9,19 +9,16 @@ body {
     transition: color 0.5s ease;
 }
 
-#theme-button {
-    background-image: url('../images/dark-theme-icon.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 32px 32px;
-}
-
-#theme-button, input {
+#theme-button, #github-button, input {
     background-color: #373737;
     color: #f4f4f4;
     transition: color 0.5s ease;
 }
 
-a {
-    color: #e4e4e4;
+#theme-button {
+    background-image: url('../images/dark-theme-icon.png');
+}
+
+#github-button {
+    background-image: url('../images/github-mark-white.png');
 }

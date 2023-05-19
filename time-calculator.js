@@ -30,10 +30,10 @@ function calculateTime() {
         let minuteWord = selectWordForNumber(minutes, minuteWords);
 
         if (hours !== 0 && minutes !== 0) {
-            result.innerHTML += hours + " " + hourWord + ", " + minutes + " " + minuteWord;
+            result.innerHTML += `${hours} ${hourWord}, ${minutes} ${minuteWord}`;
         } else {
-            result.innerHTML += (hours === 0 ? "" : hours + " " + hourWord + " ") +
-                (minutes === 0 && hours !== 0 ? "" : minutes + " " + minuteWord);
+            result.innerHTML += (hours === 0 ? "" : `${hours} ${hourWord} `) +
+                (minutes === 0 && hours !== 0 ? "" : `${minutes} ${minuteWord}`);
         }
     }
 }
