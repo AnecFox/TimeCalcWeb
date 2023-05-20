@@ -9,7 +9,7 @@ body {
     transition: color 0.5s ease;
 }
 
-input, #theme-button, #theme-button {
+input, #theme-button, #github-button {
     background-color: #e8e8e8;
     transition: color 0.5s ease;
 }
