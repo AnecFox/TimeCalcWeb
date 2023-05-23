@@ -15,9 +15,17 @@ input, #theme-button, #github-button {
 }
 
 #theme-button {
-    background-image: url('../images/light-theme-icon.png');
+    background-image: url('../icons/light-theme-icon.png');
 }
 
 #github-button {
-    background-image: url('../images/github-mark.png');
+    background-image: url('../icons/github-mark.png');
+}
+
+.dropdown-menu {
+    background-color: #fff;
+}
+
+.dropdown-menu a {
+    color: #111111;
 }

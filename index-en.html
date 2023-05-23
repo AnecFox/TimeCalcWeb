@@ -6,8 +6,8 @@
     <title>TimeCalculator</title>
     <meta charset="utf-8">
     <meta content="yes" name="apple-mobile-web-app-capable">
-    <link href="images/favicon.png" rel="icon">
-    <link href="images/apple-touch-icon.png" rel="apple-touch-icon">
+    <link href="icons/favicon.png" rel="icon">
+    <link href="icons/apple-touch-icon.png" rel="apple-touch-icon">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-light.css" id="theme-link" rel="stylesheet">
 </head>
@@ -15,7 +15,16 @@
 <body>
 <header>
     <button id="github-button" onclick="window.open('https://github.com/AnecFox/TimeCalcWeb', '_blank')"></button>
-    <button id="theme-button"></button>
+    <div class="theme-container">
+        <button id="theme-button" onclick="showDropdown()"></button>
+        <div class="dropdown-menu" id="theme-dropdown">
+            <strong>Select theme</strong>
+            <hr>
+            <a data-theme="system" href="#" onclick="setTheme('system')">System</a>
+            <a data-theme="light" href="#" onclick="setTheme('light')">Light</a>
+            <a data-theme="dark" href="#" onclick="setTheme('dark')">Dark</a>
+        </div>
+    </div>
 </header>
 
 <div class="container">
@@ -39,7 +48,7 @@
     <h2 id="result">Result: 1 hour, 34 minutes</h2>
 </div>
 
-<script src="theme-switcher.js"></script>
+<script src="theme.js"></script>
 <script src="time-calculator.js"></script>
 </body>
 

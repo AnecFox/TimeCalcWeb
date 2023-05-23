@@ -16,9 +16,17 @@ body {
 }
 
 #theme-button {
-    background-image: url('../images/dark-theme-icon.png');
+    background-image: url('../icons/dark-theme-icon.png');
 }
 
 #github-button {
-    background-image: url('../images/github-mark-white.png');
+    background-image: url('../icons/github-mark-white.png');
+}
+
+.dropdown-menu {
+    background-color: #242424;
+}
+
+.dropdown-menu a {
+    color: #f4f4f4;
 }
