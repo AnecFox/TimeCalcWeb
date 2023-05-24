@@ -4,7 +4,7 @@ body {
     transition: background-color 0.5s ease;
 }
 
-#title {
+.title {
     color: #69b5e0;
     transition: color 0.5s ease;
 }
