@@ -9,7 +9,7 @@ body {
     transition: color 0.5s ease;
 }
 
-#theme-button, #github-button, input {
+#theme-button, #github-button, #reset-time-button, input {
     background-color: #373737;
     color: #f4f4f4;
     transition: color 0.5s ease;

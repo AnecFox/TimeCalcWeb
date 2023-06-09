@@ -53,6 +53,20 @@ label {
     margin: 12px;
 }
 
+#reset-time-button {
+    font-size: 1.2em;
+    border-radius: 0.5em;
+    border-style: none;
+    display: inline-block;
+    padding: 0.5em;
+    position: fixed;
+    bottom: 8vh;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    cursor: pointer;
+    text-rendering: optimizeLegibility;
+}
+
 .container {
     text-align: center;
 }

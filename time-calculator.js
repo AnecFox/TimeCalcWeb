@@ -1,14 +1,14 @@
-const firstTime = document.getElementById("first-time");
-const secondTime = document.getElementById("second-time");
+const firstTimeInput = document.getElementById("first-time");
+const secondTimeInput = document.getElementById("second-time");
 const result = document.getElementById("result");
 
 function calculateTime() {
-    if (firstTime.value === "" || secondTime.value === "") {
+    if (firstTimeInput.value === "" || secondTimeInput.value === "") {
         result.innerHTML = "Время не выбрано";
     } else {
-        let firstTimeValue = new Date("April 23, 2023 " + firstTime.value);
-        let secondTimeValue = new Date("April 23, 2023 " + secondTime.value);
-        let difference = new Date(secondTimeValue - firstTimeValue);
+        let firstTime = new Date("April 23, 2023 " + firstTimeInput.value);
+        let secondTime = new Date("April 23, 2023 " + secondTimeInput.value);
+        let difference = new Date(secondTime - firstTime);
 
         let hours = difference.getUTCHours();
         let minutes = difference.getUTCMinutes();
@@ -32,9 +32,11 @@ function calculateTime() {
         if (hours !== 0 && minutes !== 0) {
             result.innerHTML += `${hours} ${hourWord}, ${minutes} ${minuteWord}`;
         } else {
-            result.innerHTML += (hours === 0 ? "" : `${hours} ${hourWord} `) +
-                (minutes === 0 && hours !== 0 ? "" : `${minutes} ${minuteWord}`);
+            result.innerHTML += (hours === 0 ? "" : `${hours} ${hourWord} `) + (minutes === 0 && hours !== 0 ? "" : `${minutes} ${minuteWord}`);
         }
+
+        localStorage.setItem("firstTime", firstTimeInput.value);
+        localStorage.setItem("secondTime", secondTimeInput.value);
     }
 }
 
@@ -51,5 +53,27 @@ function selectWordForNumber(number, words) {
     }
 }
 
-firstTime.addEventListener("change", calculateTime);
-secondTime.addEventListener("change", calculateTime);
+firstTimeInput.addEventListener("change", calculateTime);
+secondTimeInput.addEventListener("change", calculateTime);
+
+function resetTime() {
+    firstTimeInput.value = "12:52";
+    secondTimeInput.value = "14:26";
+    calculateTime();
+}
+
+const loadedFirstTime = localStorage.getItem("firstTime");
+const loadedSecondTime = localStorage.getItem("secondTime");
+const timeCheck = /^\d\d:\d\d$/;
+
+if (timeCheck.exec(loadedFirstTime) && timeCheck.exec(loadedSecondTime)) {
+    firstTimeInput.value = loadedFirstTime;
+    secondTimeInput.value = loadedSecondTime;
+} else {
+    resetTime();
+}
+
+const resetTimeButton = document.getElementById("reset-time-button");
+resetTimeButton.addEventListener("click", resetTime);
+
+calculateTime();
