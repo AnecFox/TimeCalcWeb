@@ -118,14 +118,6 @@ label {
 }
 
 @media only screen and (orientation: portrait) {
-    header {
-        zoom: 120%;
-    }
-
-    body {
-        zoom: 200%;
-    }
-
     html,
     body,
     .container {
