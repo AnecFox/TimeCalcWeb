@@ -5,7 +5,9 @@
 <head>
     <title>TimeCalculator</title>
     <meta charset="utf-8">
+    <meta content="Калькулятор для вычисления промежутка между двумя точками времени." name="description">
     <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="width=device-width, initial-scale=0.9" name="viewport">
     <link href="icons/favicon.png" rel="icon">
     <link href="icons/apple-touch-icon.png" rel="apple-touch-icon">
     <link href="css/style.css" rel="stylesheet">
@@ -14,9 +16,9 @@
 
 <body>
 <header>
-    <button id="github-button" onclick="window.open('https://github.com/AnecFox/TimeCalcWeb', '_blank')"></button>
+    <button id="github-button" aria-label="GitHub" onclick="window.open('https://github.com/AnecFox/TimeCalcWeb', '_blank')"></button>
     <div class="theme-container">
-        <button id="theme-button" onclick="showDropdown()"></button>
+        <button id="theme-button" aria-label="Поменять тему" onclick="showDropdown()"></button>
         <div class="dropdown-menu" id="theme-dropdown">
             <strong>Выбор темы</strong>
             <hr>
@@ -31,15 +33,13 @@
     <h1 class="title">TimeCalculator</h1>
 
     <div class="input-time-container">
-        <label>От</label>
-        <label>
+        <label>От
             <input id="first-time" type="time">
         </label>
     </div>
     <br>
     <div class="input-time-container">
-        <label>До</label>
-        <label>
+        <label>До
             <input id="second-time" type="time">
         </label>
     </div>
@@ -49,9 +49,13 @@
     <button id="reset-time-button">Сбросить</button>
 </div>
 
-<script src="lang.js"></script>
-<script src="theme.js"></script>
 <script src="time-calculator.js"></script>
+<script src="theme.js"></script>
+<script>
+    if (!navigator.language.includes("ru") && confirm("Change to English?")) {
+        window.location.href = "index-en.html";
+    }
+</script>
 </body>
 
 </html>

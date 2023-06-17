@@ -7,15 +7,8 @@ body {
     font-family: Helvetica, sans-serif;
 }
 
-.title {
-    font-size: 235%;
-}
-
-#result {
-    font-size: 148%;
-}
-
-#theme-button, #github-button {
+#theme-button,
+#github-button {
     font-size: large;
     border-style: none;
     border-radius: 0.5em;
@@ -38,10 +31,11 @@ body {
 
 input {
     font-family: Helvetica, sans-serif;
-    font-size: x-large;
+    font-size: 1.4rem;
     padding: 5px;
     border-style: none;
     border-radius: 5px;
+    margin-left: 2.4vw;
 }
 
 input[type="time"]::-webkit-calendar-picker-indicator {
@@ -49,17 +43,17 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 label {
-    font-size: 128%;
+    font-size: 1.2rem;
     margin: 12px;
 }
 
 #reset-time-button {
-    font-size: 1.2em;
-    border-radius: 0.5em;
+    font-size: 1.1rem;
+    border-radius: 0.5rem;
     border-style: none;
     display: inline-block;
     padding: 0.5em;
-    position: fixed;
+    position: absolute;
     bottom: 8vh;
     left: 50%;
     transform: translate(-50%, 50%);
@@ -67,12 +61,12 @@ label {
     text-rendering: optimizeLegibility;
 }
 
-.container {
-    text-align: center;
+.title {
+    font-size: 2.2rem;
 }
 
-.input-time-container {
-    font-size: large;
+.container {
+    text-align: center;
 }
 
 .theme-container {
@@ -92,11 +86,11 @@ label {
     -webkit-box-shadow: 0 0 27px 13px rgba(73, 73, 73, 0.2);
     -moz-box-shadow: 0 0 27px 13px rgba(73, 73, 73, 0.2);
     box-shadow: 0 0 27px 13px rgba(73, 73, 73, 0.2);
-    transition: all .09s ease-out;
+    transition: all 0.09s ease-out;
 }
 
 .dropdown-menu.show {
-    z-index: 99;
+    z-index: 1;
     visibility: visible;
     opacity: 1;
     top: calc(100% + 8px);
@@ -118,14 +112,6 @@ label {
 }
 
 @media only screen and (orientation: portrait) {
-    header {
-        zoom: 120%;
-    }
-
-    body {
-        zoom: 200%;
-    }
-
     html,
     body,
     .container {
@@ -141,5 +127,17 @@ label {
     .dropdown-menu {
         font-size: 20px;
         padding: 1em;
+    }
+
+    .input-time-container {
+        margin-top: 0.2rem;
+    }
+}
+
+@media (max-height: 426px) {
+    #reset-time-button {
+        left: 90%;
+        bottom: unset;
+        margin-top: -12vh;
     }
 }
