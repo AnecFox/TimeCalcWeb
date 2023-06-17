@@ -2,6 +2,8 @@ const firstTimeInput = document.getElementById("first-time");
 const secondTimeInput = document.getElementById("second-time");
 const result = document.getElementById("result");
 
+const defaultTime = "00:00";
+
 function calculateTime() {
     if (firstTimeInput.value === "" || secondTimeInput.value === "") {
         result.innerHTML = "Время не выбрано";
@@ -57,8 +59,8 @@ firstTimeInput.addEventListener("change", calculateTime);
 secondTimeInput.addEventListener("change", calculateTime);
 
 function resetTime() {
-    firstTimeInput.value = "12:52";
-    secondTimeInput.value = "14:26";
+    firstTimeInput.value = defaultTime;
+    secondTimeInput.value = defaultTime;
     calculateTime();
 }
 
