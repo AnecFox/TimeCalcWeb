@@ -60,7 +60,7 @@ label {
     text-rendering: optimizeLegibility;
     cursor: pointer;
     transform: translate(-50%, 50%);
-    transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease;
 }
 
 #reset-time-button.scale {
