@@ -30,7 +30,6 @@ body {
 }
 
 input {
-    font-family: Helvetica, sans-serif;
     font-size: 1.4rem;
     padding: 5px;
     border-style: none;
@@ -56,9 +55,10 @@ label {
     position: absolute;
     bottom: 8vh;
     left: 50%;
+    text-rendering: optimizeLegibility;
     cursor: pointer;
     transform: translate(-50%, 50%);
-    transition: transform 0.09s ease-out;
+    transition: transform 0.14s ease-out;
 }
 
 #reset-time-button.scale {
@@ -81,6 +81,7 @@ label {
     display: block;
     position: absolute;
     top: 40px;
+    opacity: 0;
     z-index: -1;
     padding: 12px 32px 12px 12px;
     width: 148px;
