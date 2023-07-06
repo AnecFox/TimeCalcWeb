@@ -12,6 +12,14 @@
     <link href="icons/apple-touch-icon.png" rel="apple-touch-icon">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-light.css" id="theme-link" rel="stylesheet">
+
+    <script src="time-calculator.js" defer></script>
+    <script src="theme.js" defer></script>
+    <script>
+        if (!navigator.language.includes("ru") && confirm("Change to English?")) {
+            window.location.href = "index-en.html";
+        }
+    </script>
 </head>
 
 <body>
@@ -48,14 +56,6 @@
     <h2 id="result">Результат</h2>
     <button id="reset-time-button">Сбросить</button>
 </div>
-
-<script src="time-calculator.js"></script>
-<script src="theme.js"></script>
-<script>
-    if (!navigator.language.includes("ru") && confirm("Change to English?")) {
-        window.location.href = "index-en.html";
-    }
-</script>
 </body>
 
 </html>
