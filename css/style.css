@@ -56,9 +56,13 @@ label {
     position: absolute;
     bottom: 8vh;
     left: 50%;
-    transform: translate(-50%, 50%);
     cursor: pointer;
-    text-rendering: optimizeLegibility;
+    transform: translate(-50%, 50%);
+    transition: transform 0.09s ease-out;
+}
+
+#reset-time-button.scale {
+    transform: translate(-50%, 50%) scale(150%) translateY(-0.5rem);
 }
 
 .title {
@@ -86,7 +90,7 @@ label {
     -webkit-box-shadow: 0 0 27px 13px rgba(73, 73, 73, 0.2);
     -moz-box-shadow: 0 0 27px 13px rgba(73, 73, 73, 0.2);
     box-shadow: 0 0 27px 13px rgba(73, 73, 73, 0.2);
-    transition: all 0.09s ease-out;
+    transition: all 0.14s ease-out;
 }
 
 .dropdown-menu.show {

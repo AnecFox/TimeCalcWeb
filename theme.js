@@ -13,9 +13,11 @@ if (localStorage.getItem("theme") === lightTheme) {
     setTheme("system");
 }
 
-window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
-    setTheme(localStorage.getItem("theme"), true);
-});
+window
+    .matchMedia("(prefers-color-scheme: dark)")
+    .addEventListener("change", () => {
+        setTheme(localStorage.getItem("theme"), true);
+    });
 
 function showDropdown() {
     document.getElementById("theme-dropdown").classList.toggle("show");
@@ -33,8 +35,11 @@ function setTheme(theme, isForEvent = false) {
         currentTheme = darkTheme;
         localStorage.setItem("theme", currentTheme);
     } else {
-        currentTheme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ?
-            darkTheme : lightTheme;
+        currentTheme =
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? darkTheme
+                : lightTheme;
         localStorage.setItem("theme", "system");
     }
 
@@ -53,7 +58,10 @@ function setTheme(theme, isForEvent = false) {
 }
 
 document.addEventListener("click", (event) => {
-    if (!event.target.closest("#theme-dropdown") && !event.target.matches("#theme-button")) {
+    if (
+        !event.target.closest("#theme-dropdown") &&
+        !event.target.matches("#theme-button")
+    ) {
         hideDropdown();
     }
 });

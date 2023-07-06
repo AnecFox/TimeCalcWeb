@@ -34,7 +34,11 @@ function calculateTime() {
         if (hours !== 0 && minutes !== 0) {
             result.innerHTML += `${hours} ${hourWord}, ${minutes} ${minuteWord}`;
         } else {
-            result.innerHTML += (hours === 0 ? "" : `${hours} ${hourWord} `) + (minutes === 0 && hours !== 0 ? "" : `${minutes} ${minuteWord}`);
+            result.innerHTML +=
+                (hours === 0 ? "" : `${hours} ${hourWord} `) +
+                (minutes === 0 && hours !== 0
+                    ? ""
+                    : `${minutes} ${minuteWord}`);
         }
 
         localStorage.setItem("firstTime", firstTimeInput.value);
@@ -48,7 +52,11 @@ function selectWordForNumber(number, words) {
 
     if (number.toString().endsWith("1") && number !== 11) {
         return words[0];
-    } else if (lastNumberSymbol <= 4 && lastNumberSymbol >= 2 && !(number > 11 && number < 15)) {
+    } else if (
+        lastNumberSymbol <= 4 &&
+        lastNumberSymbol >= 2 &&
+        !(number > 11 && number < 15)
+    ) {
         return words[1];
     } else {
         return words[2];
@@ -57,12 +65,6 @@ function selectWordForNumber(number, words) {
 
 firstTimeInput.addEventListener("change", calculateTime);
 secondTimeInput.addEventListener("change", calculateTime);
-
-function resetTime() {
-    firstTimeInput.value = defaultTime;
-    secondTimeInput.value = defaultTime;
-    calculateTime();
-}
 
 const loadedFirstTime = localStorage.getItem("firstTime");
 const loadedSecondTime = localStorage.getItem("secondTime");
@@ -76,6 +78,19 @@ if (timeCheck.exec(loadedFirstTime) && timeCheck.exec(loadedSecondTime)) {
 }
 
 const resetTimeButton = document.getElementById("reset-time-button");
-resetTimeButton.addEventListener("click", resetTime);
+resetTimeButton.addEventListener("click", () => resetTime(true));
+
+function resetTime(isScaleButton = false) {
+    firstTimeInput.value = defaultTime;
+    secondTimeInput.value = defaultTime;
+    calculateTime();
+
+    if (isScaleButton) {
+        resetTimeButton.classList.add("scale");
+        setTimeout(() => {
+            resetTimeButton.classList.remove("scale");
+        }, 300);
+    }
+}
 
 calculateTime();

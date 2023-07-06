@@ -14,7 +14,6 @@ input,
 #github-button,
 #reset-time-button {
     background-color: #e8e8e8;
-    transition: color 0.5s ease;
 }
 
 #theme-button {
