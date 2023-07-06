@@ -5,21 +5,24 @@ body {
 }
 
 .title {
-    color: #349ad4;
+    color: #3d8ac2;
     transition: color 0.5s ease;
 }
 
-input, #theme-button, #github-button, #reset-time-button {
+input,
+#theme-button,
+#github-button,
+#reset-time-button {
     background-color: #e8e8e8;
     transition: color 0.5s ease;
 }
 
 #theme-button {
-    background-image: url('../icons/light-theme-icon.png');
+    background-image: url("../icons/light-theme-icon.png");
 }
 
 #github-button {
-    background-image: url('../icons/github-mark.png');
+    background-image: url("../icons/github-mark.png");
 }
 
 .dropdown-menu {
