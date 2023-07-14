@@ -13,8 +13,8 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/style-light.css" id="theme-link" rel="stylesheet">
 
-    <script src="time-calculator.js" defer></script>
-    <script src="theme.js" defer></script>
+    <script defer src="time-calculator.js"></script>
+    <script defer src="theme.js"></script>
     <script>
         if (navigator.language.includes("ru") && confirm("Поставить русский?")) {
             window.location.href = "index.html";
@@ -24,9 +24,10 @@
 
 <body>
 <header>
-    <button id="github-button" aria-label="GitHub" onclick="window.open('https://github.com/AnecFox/TimeCalcWeb', '_blank')"></button>
+    <button aria-label="GitHub" id="github-button"
+            onclick="window.open('https://github.com/AnecFox/TimeCalcWeb', '_blank')"></button>
     <div class="theme-container">
-        <button id="theme-button" aria-label="Switch theme" onclick="showDropdown()"></button>
+        <button aria-label="Switch theme" id="theme-button" onclick="showDropdown()"></button>
         <div class="dropdown-menu" id="theme-dropdown">
             <strong>Select theme</strong>
             <hr>
@@ -42,7 +43,7 @@
 
     <div class="input-time-container">
         <label>From
-            <input id="first-time" type="time" style="margin-right: 26px;">
+            <input id="first-time" style="margin-right: 26px;" type="time">
         </label>
     </div>
     <br>
