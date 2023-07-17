@@ -1,3 +1,5 @@
 # TimeCalculator
 
-[![Video](https://img.youtube.com/vi/mvx3hweyipo/0.jpg)](https://www.youtube.com/watch?v=mvx3hweyipo)
+[See video](https://www.youtube.com/watch?v=6bg6fBsO72o)
+
+[Смотреть видео](https://www.youtube.com/watch?v=mvx3hweyipo)
