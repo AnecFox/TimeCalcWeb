@@ -1,3 +1,3 @@
-# TimeCalculator Web
+# TimeCalculator
 
-![TimeCalcWeb GIF](image.gif)
+![video](video.mov)
