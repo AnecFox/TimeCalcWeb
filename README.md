@@ -1,5 +1,3 @@
 # TimeCalculator
 
-<video controls width="514" height="540">
-  <source src="video.mp4" type="video/mp4">
-</video>
+[![Video](https://img.youtube.com/vi/mvx3hweyipo/0.jpg)](https://www.youtube.com/watch?v=mvx3hweyipo)
