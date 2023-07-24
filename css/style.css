@@ -73,6 +73,10 @@ label {
     text-align: center;
 }
 
+.input-time-container {
+    margin-bottom: 1.25rem;
+}
+
 .theme-container {
     position: relative;
 }
