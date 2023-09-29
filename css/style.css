@@ -7,6 +7,13 @@ header {
     justify-content: space-between;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #theme-button,
 #github-button {
     font-size: large;
@@ -27,6 +34,15 @@ header {
 
 #github-button {
     float: left;
+}
+
+.inputs-container {
+    text-align: end;
+    margin-right: 0.8rem;
+}
+
+.input-time-container {
+    margin-bottom: 1rem;
 }
 
 input {
@@ -67,14 +83,6 @@ label {
 
 .title {
     font-size: 2.2rem;
-}
-
-.container {
-    text-align: center;
-}
-
-.input-time-container {
-    margin-bottom: 1.25rem;
 }
 
 .theme-container {
@@ -127,12 +135,6 @@ label {
         height: 94%;
     }
 
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
     .dropdown-menu {
         font-size: 20px;
         padding: 1em;
@@ -147,6 +149,6 @@ label {
     #reset-time-button {
         left: 90%;
         bottom: unset;
-        margin-top: -12vh;
+        margin-top: 70vh;
     }
 }
