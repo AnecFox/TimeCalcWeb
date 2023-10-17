@@ -4,9 +4,15 @@ const result = document.getElementById("result");
 
 const defaultTime = "00:00";
 
+const isEnglish = window.location.pathname.includes('en');
+
 function calculateTime() {
     if (firstTimeInput.value === "" || secondTimeInput.value === "") {
-        result.innerHTML = "Время не выбрано";
+        if (isEnglish) {
+            result.innerHTML = 'Time isn\'t selected';
+        } else {
+            result.innerHTML = "Время не выбрано";
+        }
     } else {
         let firstTime = new Date("April 23, 2023 " + firstTimeInput.value);
         let secondTime = new Date("April 23, 2023 " + secondTimeInput.value);
@@ -18,14 +24,14 @@ function calculateTime() {
         let hourWords;
         let minuteWords;
 
-        if (window.location.pathname.includes("en")) {
-            hourWords = ["hour", "hours", "hours"];
-            minuteWords = ["minute", "minutes", "minutes"];
-            result.innerHTML = "Result: ";
+        if (isEnglish) {
+            hourWords = ['hour', 'hours', 'hours'];
+            minuteWords = ['minute', 'minutes', 'minutes'];
+            result.innerHTML = 'Result: ';
         } else {
-            hourWords = ["час", "часа", "часов"];
-            minuteWords = ["минута", "минуты", "минут"];
-            result.innerHTML = "Результат: ";
+            hourWords = ['час', 'часа', 'часов'];
+            minuteWords = ['минута', 'минуты', 'минут'];
+            result.innerHTML = 'Результат: ';
         }
 
         let hourWord = selectWordForNumber(hours, hourWords);
