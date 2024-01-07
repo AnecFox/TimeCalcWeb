@@ -1,6 +1,6 @@
-const firstTimeInput = document.getElementById("first-time");
-const secondTimeInput = document.getElementById("second-time");
-const result = document.getElementById("result");
+const firstTimeInput = document.querySelector(".first-time");
+const secondTimeInput = document.querySelector(".second-time");
+const result = document.querySelector(".result");
 
 const defaultTime = "00:00";
 
@@ -83,7 +83,7 @@ if (timeCheck.exec(loadedFirstTime) && timeCheck.exec(loadedSecondTime)) {
     resetTime();
 }
 
-const resetTimeButton = document.getElementById("reset-time-button");
+const resetTimeButton = document.querySelector(".reset-time-button");
 resetTimeButton.addEventListener("click", () => resetTime(true));
 
 function resetTime(isScaleButton = false) {

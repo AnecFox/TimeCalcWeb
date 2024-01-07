@@ -10,24 +10,24 @@ body {
 }
 
 input,
-#theme-button,
-#github-button,
-#reset-time-button {
+.theme-button,
+.github-button,
+.reset-time-button {
     background-color: #e8e8e8;
 }
 
-#theme-button {
+.theme-button {
     background-image: url("../icons/light-theme-icon.png");
 }
 
-#github-button {
+.github-button {
     background-image: url("../icons/github-mark.png");
 }
 
-.dropdown-menu {
+.theme-menu {
     background-color: #fff;
 }
 
-.dropdown-menu a {
+.theme-menu a {
     color: #111111;
 }

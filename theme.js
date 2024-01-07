@@ -19,12 +19,12 @@ window
         setTheme(localStorage.getItem("theme"), true);
     });
 
-function showDropdown() {
-    document.getElementById("theme-dropdown").classList.toggle("show");
+function showMenu() {
+    document.querySelector(".theme-menu").classList.toggle("show");
 }
 
-function hideDropdown() {
-    document.getElementById("theme-dropdown").classList.remove("show");
+function hideMenu() {
+    document.querySelector(".theme-menu").classList.remove("show");
 }
 
 function setTheme(theme, isForEvent = false) {
@@ -44,7 +44,7 @@ function setTheme(theme, isForEvent = false) {
     }
 
     if (!isForEvent) {
-        const options = document.querySelectorAll("#theme-dropdown a");
+        const options = document.querySelectorAll(".theme-menu a");
         for (let i = 0; i < options.length; i++) {
             options[i].classList.remove("selected");
             if (options[i].getAttribute("data-theme") === theme) {
@@ -52,16 +52,16 @@ function setTheme(theme, isForEvent = false) {
             }
         }
 
-        hideDropdown();
+        hideMenu();
     }
     link.setAttribute("href", currentTheme);
 }
 
 document.addEventListener("click", (event) => {
     if (
-        !event.target.closest("#theme-dropdown") &&
-        !event.target.matches("#theme-button")
+        !event.target.closest(".theme-menu") &&
+        !event.target.matches(".theme-button")
     ) {
-        hideDropdown();
+        hideMenu();
     }
 });

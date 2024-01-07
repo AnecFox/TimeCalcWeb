@@ -27,11 +27,11 @@
 
 <body>
 <header>
-    <button aria-label="GitHub" id="github-button"
+    <button aria-label="GitHub" class="github-button"
             onclick="window.open('https://github.com/AnecFox/TimeCalcWeb', '_blank')"></button>
     <div class="theme-container">
-        <button aria-label="Поменять тему" id="theme-button" onclick="showDropdown()"></button>
-        <div class="dropdown-menu" id="theme-dropdown">
+        <button aria-label="Поменять тему" class="theme-button" onclick="showMenu()"></button>
+        <div class="theme-menu">
             <strong>Выбор темы</strong>
             <hr>
             <a data-theme="system" href="#" onclick="setTheme('system')">Системная</a>
@@ -47,18 +47,18 @@
     <div class="inputs-container">
         <div class="input-time-container">
             <label>От
-                <input id="first-time" type="time">
+                <input class="first-time" type="time">
             </label>
         </div>
         <div class="input-time-container">
             <label>До
-                <input id="second-time" type="time">
+                <input class="second-time" type="time">
             </label>
         </div>
     </div>
 
-    <h2 id="result">Результат</h2>
-    <button id="reset-time-button">Сбросить</button>
+    <h2 class="result">Результат</h2>
+    <button class="reset-time-button">Сбросить</button>
 </div>
 </body>
 

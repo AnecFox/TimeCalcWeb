@@ -9,26 +9,26 @@ body {
     transition: color 0.5s ease;
 }
 
-#theme-button,
-#github-button,
-#reset-time-button,
+.theme-button,
+.github-button,
+.reset-time-button,
 input {
     background-color: #373737;
     color: #f4f4f4;
 }
 
-#theme-button {
+.theme-button {
     background-image: url("../icons/dark-theme-icon.png");
 }
 
-#github-button {
+.github-button {
     background-image: url("../icons/github-mark-white.png");
 }
 
-.dropdown-menu {
+.theme-menu {
     background-color: #242424;
 }
 
-.dropdown-menu a {
+.theme-menu a {
     color: #f4f4f4;
 }
