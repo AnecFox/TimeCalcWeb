@@ -1,0 +1,14 @@
+{
+  "background_color": "#565656",
+  "theme_color": "#3d8ac2",
+  "name": "TimeCalculator",
+  "short_name": "TimeCalc",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "icons/apple-touch-icon.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ]
+}
