@@ -1,6 +1,6 @@
 {
   "background_color": "#565656",
-  "theme_color": "#3d8ac2",
+  "theme_color": "#3f7eab",
   "name": "TimeCalculator",
   "short_name": "TimeCalc",
   "display": "standalone",
